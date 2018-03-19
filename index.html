@@ -5,6 +5,7 @@
     <title>Home | Sosoumvannak Hok</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body id="home">
     <header class="header_flex">
@@ -33,10 +34,11 @@
                     <img src="http://via.placeholder.com/1600x600" alt="">
                     <div class="slide_text">
                         <h1>Hi! My name is Sosoumvannak Hok.</h1>
+                        <p>I like video games and anime.</p>
                         <p>Take a look around in my website.</p>
                     </div>
                 </div>
-                <div class="slide slide_css_zen_garden">
+                <div class="slide slide_css_zen_garden" style="display: none;">
                     <img src="http://via.placeholder.com/1600x600" alt="">
                     <div class="slide_text">
                         <h1>CSS Zen Garden</h1>
@@ -44,7 +46,7 @@
                         <p><a href="link/zengarden/zengarden.html" target="_blank">Visit the Website!</a></p>
                     </div>
                 </div>
-                <div class="slide slide_rush_hour_3_swede">
+                <div class="slide slide_rush_hour_3_swede" style="display: none;">
                     <img src="http://via.placeholder.com/1600x600" alt="">
                     <div class="slide_text">
                         <h1>Rush Hour 3 Swede</h1>
@@ -52,7 +54,7 @@
                         <p><a href="">Watch the Video!</a></p>
                     </div>
                 </div>
-                <div class="slide slide_survive_cambodia">
+                <div class="slide slide_survive_cambodia" style="display: none;">
                     <img src="http://via.placeholder.com/1600x600" alt="">
                     <div class="slide_text">
                         <h1>Survive Cambodia</h1>
@@ -62,8 +64,8 @@
                 </div>
             </div>
             <div class="slide_buttons">
-                <a href=""><i class="fa fa-angle-left"></i></a>
-                <a href=""><i class="fa fa-angle-right"></i></a>
+                <a class="button button_left" onclick="prev()"><i class="fa fa-angle-left"></i></a>
+                <a class="button button_right" onclick="next()"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
         <div class="card_container">
