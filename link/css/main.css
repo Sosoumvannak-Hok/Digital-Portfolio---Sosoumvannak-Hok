@@ -1,0 +1,113 @@
+/* --------------------------------------- GENERAL --------------------------------------- */
+
+/*
+
+    My Colors:      #404040     #cccccc     #f7f7f7     #003366     #3b5998
+    Achromatic:     #ffffff     #e6e6e6     #d9d9d9     #cccccc     #bfbfbf
+    Alternative:    #f9f9f9
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans|Play');
+
+* {
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+a, li {
+    font-family: "Maven Pro", sans-serif;
+}
+
+h1 {
+    font-family: "Play", sans-serif;
+}
+
+/* --------------------------------------- HEADER ---------------------------------------- */
+
+header {
+    background-color: #f9f9f9;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.logo {
+    
+}
+
+.tabs ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.tabs ul li {
+    display: inline;
+    font-size: 17px;
+    margin: 0 10px;
+    padding: 10px 15px;
+}
+
+.tabs ul li:hover {
+    background-color: #f7f7f7;
+}
+
+.tabs ul li:active {
+    background-color: #e6e6e6;
+}
+
+.tabs ul a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.tabs .dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.tabs .dropdown .dropdown_content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 0;
+    position: absolute;
+    width: 180px;
+    z-index: 2;
+    top: 40px;
+    left: 1px;
+}
+
+.tabs .dropdown .dropdown_content li {
+    display: block;
+    margin: 0;
+    padding: 15px;
+}
+
+.tabs .dropdown:hover .dropdown_content {
+    display: block;
+}
+
+/* ------------------------------------- SLIDESHOW --------------------------------------- */
+
+.slideshow {
+    
+}
+
+.slide {
+    
+}
