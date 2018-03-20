@@ -29,19 +29,26 @@ li {
 }
 
 h1 {
-    font-family: "Play", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 header {
-    background-color: #f9f9f9;
-    position: fixed;
     width: 100%;
     z-index: 1;
 }
 
 main {
     background-color: #f9f9f9;
-    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer {
+    background-color: #e6e6e6;
+}
+
+.title {
+    padding: 100px 0;
+    text-align: center;
 }
 
 /* --------------------------------------- NAVBAR ---------------------------------------- */
@@ -98,7 +105,7 @@ main {
     width: 180px;
     z-index: 2;
     top: 40px;
-    left: 1px;
+    left: .5px;
 }
 
 .tabs .dropdown .dropdown_content li {
@@ -114,12 +121,15 @@ main {
 /* ------------------------------------- SLIDESHOW --------------------------------------- */
 
 .slideshow {
-    
+    position: relative;
 }
 
-.slide img {
+.slide .img {
+    background: linear-gradient(to top, #f9f9f9, #ffffff, transparent), url("../img/demo.jpeg") no-repeat center;
+    background-size: cover; 
     display: block;
-    margin: auto;
+    width: 100%;
+    height: 980px;
 }
 
 .slide_text {
@@ -127,16 +137,219 @@ main {
     padding: 8px 12px;
     position: relative;
     width: 70%;
-    top: -400px;
+    top: -600px;
     margin: auto;
 }
 
-.slide_buttons {
+.button_left,
+.button_right {
+    background-color: #404040;
+    color: #ffffff;
     cursor: pointer;
     font-size: 35px;
+    opacity: 0.5;
+    padding: 10px 15px;
     position: absolute;
+    top: 40%;
 }
 
 .button_right {
     right: 0;
+}
+
+.button_left:hover, 
+.button_right:hover {
+   opacity: 0.75;
+}
+
+.bottom_fade img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 69%;
+}
+
+/* --------------------------------------- CARDS ----------------------------------------- */
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 25px;
+}
+
+.card img {
+    max-width: 350px;
+    max-height: 250px;
+}
+
+.card_text {
+    max-width: 350px;
+    padding: 10px 20px 20px 20px;
+}
+
+.card_text h1 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.card_text p {
+    font-size: 15px;
+}
+
+.card_text a {
+    color: #003366;
+    text-transform: uppercase;
+}
+
+.card_text a:hover {
+    color: #3b5998;
+}
+
+.card_title h1 {
+    font-size: 25px;
+    font-weight: 100;
+    padding: 15px 0;
+    text-align: center;
+    max-width: 350px;
+}
+
+/* -------------------------------------- DISPLAY ---------------------------------------- */
+
+.display_container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    padding: 25px;
+}
+
+.display img {
+    width: 350px;
+    height: 100%;
+}
+
+.display_text {
+    padding: 0 10px;
+}
+
+.display_title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.display_title h1 {
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.display_title a {
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+/* -------------------------------------- ABOUT ME --------------------------------------- */
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.aboutme_bio {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 25px;
+}
+
+.aboutme_bio img {
+    max-width: 263px;
+}
+
+.bio_text {
+    max-width: 263px;
+}
+
+.bio_text h1 {
+    font-size: 25px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.aboutme_info {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 25px;
+    max-width: 60%;
+}
+
+/* -------------------------------------- CONTACT ---------------------------------------- */
+
+.media_container {
+    
+}
+
+/* --------------------------------------- FOOTER ---------------------------------------- */
+
+.footer_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin: 10px;
+}
+
+.links a {
+    color: #000000;
 }

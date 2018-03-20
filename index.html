@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Home | Sosoumvannak Hok</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body id="home">
     <header class="header_flex">
         <div class="logo">
-            <a href="index.html"><img src="http://via.placeholder.com/100x50" alt=""></a>
+            <!--<a href="index.html"><img src="http://via.placeholder.com/100x50" alt=""></a>-->
         </div>
         <div class="tabs">
             <ul>
@@ -31,15 +32,15 @@
         <div class="slideshow">
             <div class="slides">
                 <div class="slide slide_welcome">
-                    <img src="http://via.placeholder.com/1600x600" alt="">
+                    <span class="img" style=""></span>
                     <div class="slide_text">
                         <h1>Hi! My name is Sosoumvannak Hok.</h1>
-                        <p>I like video games and anime.</p>
                         <p>Take a look around in my website.</p>
+                        <p><a href="about.html">Want to know more about me?</a></p>
                     </div>
                 </div>
                 <div class="slide slide_css_zen_garden" style="display: none;">
-                    <img src="http://via.placeholder.com/1600x600" alt="">
+                    <span class="img" style=""></span>
                     <div class="slide_text">
                         <h1>CSS Zen Garden</h1>
                         <p>Web Development</p>
@@ -47,7 +48,7 @@
                     </div>
                 </div>
                 <div class="slide slide_rush_hour_3_swede" style="display: none;">
-                    <img src="http://via.placeholder.com/1600x600" alt="">
+                    <span class="img" style=""></span>
                     <div class="slide_text">
                         <h1>Rush Hour 3 Swede</h1>
                         <p>Video Editing</p>
@@ -55,7 +56,7 @@
                     </div>
                 </div>
                 <div class="slide slide_survive_cambodia" style="display: none;">
-                    <img src="http://via.placeholder.com/1600x600" alt="">
+                    <span class="img" style=""></span>
                     <div class="slide_text">
                         <h1>Survive Cambodia</h1>
                         <p>Writing</p>
@@ -67,6 +68,9 @@
                 <a class="button button_left" onclick="prev()"><i class="fa fa-angle-left"></i></a>
                 <a class="button button_right" onclick="next()"><i class="fa fa-angle-right"></i></a>
             </div>
+            <!--<div class="bottom_fade">
+                <img src="img/bottom_fade.png" alt="">
+            </div>-->
         </div>
         <div class="card_container">
             <div class="card card_about">
@@ -74,7 +78,8 @@
                 <div class="card_text">
                     <h1>About</h1>
                     <p>A little more about me.</p>
-                    <p><a href="about.html">Check it out</a></p>
+                    <br>
+                    <p><a href="about.html">Check it out <i class="fa fa-angle-right"></i></a></p>
                 </div>
             </div>
             <div class="card card_resume">
@@ -82,7 +87,8 @@
                 <div class="card_text">
                     <h1>Resume</h1>
                     <p>A list of my skills and backgrounds.</p>
-                    <p><a href="resume.html">Check it out</a></p>
+                    <br>
+                    <p><a href="resume.html">Check it out <i class="fa fa-angle-right"></i></a></p>
                 </div>
             </div>
             <div class="card card_web_development">
@@ -90,7 +96,8 @@
                 <div class="card_text">
                     <h1>Web Development</h1>
                     <p>Here are some websites that I've contributed on.</p>
-                    <p><a href="webdevelopment.html">Check it out</a></p>
+                    <br>
+                    <p><a href="webdevelopment.html">Check it out <i class="fa fa-angle-right"></i></a></p>
                 </div>
             </div>
             <div class="card card_video_editing">
@@ -98,7 +105,8 @@
                 <div class="card_text">
                     <h1>Video Editing</h1>
                     <p>Here are some videos that I've edited.</p>
-                    <p><a href="videoediting.html">Check it out</a></p>
+                    <br>
+                    <p><a href="videoediting.html">Check it out <i class="fa fa-angle-right"></i></a></p>
                 </div>
             </div>
             <div class="card card_writing">
@@ -106,7 +114,8 @@
                 <div class="card_text">
                     <h1>Writing</h1>
                     <p>Here are some writings I've done.</p>
-                    <p><a href="writing.html">Check it out</a></p>
+                    <br>
+                    <p><a href="writing.html">Check it out <i class="fa fa-angle-right"></i></a></p>
                 </div>
             </div>
             <div class="card card_contact">
@@ -114,7 +123,8 @@
                 <div class="card_text">
                     <h1>Contact</h1>
                     <p>You may call me whenever possible.</p>
-                    <p><a href="contact.html">Check it out</a></p>
+                    <br>
+                    <p><a href="contact.html">Check it out <i class="fa fa-angle-right"></i></a></p>
                 </div>
             </div>
         </div>
@@ -122,17 +132,19 @@
     <footer class="footer_flex">
         <div class="links">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
                 <li><a href="webdevelopment.html">Web Development</a></li>
                 <li><a href="videoediting.html">Video Editing</a></li>
                 <li><a href="writing.html">Writing</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="contacts">
-            <a href=""><i>Google</i></a>
-            <a href="https://www.linkedin.com/in/sosoumvannak-hok-74533714a/" target="_blank"><i>LinkedIn</i></a>
+            <a href=""><i class="fa fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/sosoumvannak-hok-74533714a/" target="_blank"><i class="fa fa-linkedin"></i></a>
             <p>Sosoumvannak Hok 2018</p>
         </div>
     </footer>

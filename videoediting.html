@@ -4,51 +4,97 @@
     <meta charset="UTF-8">
     <title>Video Editing | Sosoumvannak Hok</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/jscript" src="js/main.js"></script>
 </head>
 <body id="video_editing">
+    <header class="header_flex">
+        <div class="logo">
+            <!--<a href="index.html"><img src="http://via.placeholder.com/100x50" alt=""></a>-->
+        </div>
+        <div class="tabs">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="dropdown">Portfolio
+                    <ul class="dropdown_content">
+                        <li><a href="webdevelopment.html">Web Development</a></li>
+                        <li><a href="videoediting.html">Video Editing</a></li>
+                        <li><a href="writing.html">Writing</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
     <main>
-        <div class="title">
+        <div class="title title_video_editing">
             <h1>Video Editing</h1>
         </div>
         <div class="card_container">
-            <div class="card card_rush_hour_3_swede">
+            <div class="card card_rush_hour_3_swede" onclick="vidItems[0].displayVidObject();">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Rush Hour 3 Swede</h1>
+                <div class="card_title">
+                    <h1>Rush Hour 3 Swede</h1>
+                </div>
             </div>
-            <div class="card card_sunnyside_girl's_varsity_basketball">
+            <div class="card card_sunnyside_girl's_varsity_basketball" onclick="vidItems[1].displayVidObject();">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Sunnyside Girls' Varsity Basketball</h1>
+                <div class="card_title">
+                    <h1 style="font-size: 19px;">Sunnyside Girls' Varsity Basketball</h1>
+                </div>
             </div>
         </div>
-        <div class="display_container">
+        <div class="display_container" id="display_vid_js">
             <div class="display display_rush_hour_3_swede">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <div class="display_title">
-                    <h1>Rush Hour 3 Swede</h1>
-                    <a href=""><i class="fa fa-close"></i></a>
-                </div>
                 <div class="display_text">
+                    <div class="display_title">
+                        <h1>Rush Hour 3 Swede</h1>
+                        <a href=""><i class="fa fa-close"></i></a>
+                    </div>
                     <p>Occupation: Team Project</p>
                     <p>Software: <i>Adobe Premiere Pro</i></p>
                     <p>Date: May 2017</p>
+                    <br>
                     <p>As a final project in my first year of Video Production, I had to get into a team to produce a movie swede, a reenactment of a movie scene using no budget whatsoever. My team and I decided doing a scene from Rush Hour 3 called "He is Mi and I am Yu". We thought it was going to be a fun and easy assignment, but it became tough once we were doing the actual production. Each of us had to take on more than one role; I was the director, actor, and video editor. We also had to gather props that were free for us to grab, and it was a struggle. After the production, the final edit of the swede was submitted to my instructor and at the end of the year, my team and I received an award for best swede. It was a funny video to laugh at, and it most accurately mirrored the actual scene in Rush Hour 3. After that, I have gained experience in all the stages of video production.</p>
                 </div>
             </div>
             <div class="display display_sunnyside_girl's_varsity_basketball">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <div class="display_title">
-                    <h1>Sunnyside Girls' Varsity Basketball</h1>
-                    <a href=""><i class="fa fa-close"></i></a>
-                </div>
                 <div class="display_text">
+                    <div class="display_title">
+                        <h1>Sunnyside Girls' Varsity Basketball</h1>
+                        <a href=""><i class="fa fa-close"></i></a>
+                    </div>
                     <p>Occupation: Video Assignment</p>
                     <p>Software: <i>Adobe Premiere Pro</i></p>
                     <p>Date: February 2018</p>
+                    <br>
                     <p>During the winter season and my second year of Video Production, I was assigned a team to do a sport video with for my school. The Girls' Varsity Basketball team needed a video showcasing them in a positive way for their sports award ceremony. Me and my team planned out how the video was going to be, when to record, and who was going to edit the video. The hardest aspect of the job was to schedule the time and place of where we were supposed to be. We had the time for their games and practices, but we had busy schedules of our own, so staying up late was frequent for us. After the completion of the sport video, it was checked off by my instructor and it received the green light to be presented in the sports award. From that point forward, I've learned how to provide video contact and manage busy scheduling.</p>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer_flex">
+        <div class="links">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="webdevelopment.html">Web Development</a></li>
+                <li><a href="videoediting.html">Video Editing</a></li>
+                <li><a href="writing.html">Writing</a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <a href=""><i class="fa fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/sosoumvannak-hok-74533714a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <p>Sosoumvannak Hok 2018</p>
+        </div>
+    </footer>
 </body>
 </html>

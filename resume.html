@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <title>Resume | Sosomvannak Hok</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/jscript" src="js/main.js"></script>
 </head>
 <body id="resume">
+    <header class="header_flex">
+        <div class="logo">
+            <!--<a href="index.html"><img src="http://via.placeholder.com/100x50" alt=""></a>-->
+        </div>
+        <div class="tabs">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="dropdown">Portfolio
+                    <ul class="dropdown_content">
+                        <li><a href="webdevelopment.html">Web Development</a></li>
+                        <li><a href="videoediting.html">Video Editing</a></li>
+                        <li><a href="writing.html">Writing</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
     <main>
         <div class="title title_resume">
             <h1>My Resume</h1>
@@ -14,26 +35,37 @@
         <div class="card_container">
             <div class="card">
                 <img src="img/education.jpg" alt="">
-                <h1>Education</h1>
+                <div class="card_title">
+                    <h1>Education</h1>
+                </div>
             </div>
             <div class="card">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Software</h1>
+                <div class="card_title">
+                    <h1>Software</h1>
+                </div>
             </div>
             <div class="card">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Certifications</h1>
+                <div class="card_title">
+                    <h1>Certifications</h1>
+                </div>
             </div>
             <div class="card">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Extracurricular</h1>
+                <div class="card_title">
+                    <h1>Extracurricular</h1>
+                </div>
             </div>
         </div>
         <div class="display_container">
             <div class="display">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Education</h1>
                 <div class="display_text">
+                    <div class="display_title">
+                        <h1>Education</h1>
+                        <a><i class="fa fa-close"></i></a>
+                    </div>
                     <p><b>Center for Advanced Research and Technology</b> (Aug. 2017-present)</p>
                     <ul>
                         <p><b><i>Web Application Development Lab </i></b>(Aug. 2017-present)</p>
@@ -43,8 +75,6 @@
                         <li>Produced and presented formal PowerPoint presentations</li>
                         <li>Guided a team to construct informational websites</li>
                     </ul>
-                </div>
-                <div class="display_text">
                     <p><b>Sunnyside High</b> (Aug. 2015-present)</p>
                     <ul>
                         <li>Advanced Placement Class - Human Geography</li>
@@ -59,8 +89,11 @@
             </div>
             <div class="display">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Software</h1>
                 <div class="display_text">
+                    <div class="display_title">
+                        <h1>Software</h1>
+                        <a><i class="fa fa-close"></i></a>
+                    </div>
                     <p>Here are some of the softwares that I am familiar with:</p>
                     <ul>
                         <li>Adobe After Effects</li>
@@ -74,8 +107,11 @@
             </div>
             <div class="display">
                 <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Certificates</h1>
                 <div class="display_text">
+                    <div class="display_title">
+                        <h1>Certificates</h1>
+                        <a><i class="fa fa-close"></i></a>
+                    </div>
                     <ul>
                         <li>2 Stand Up for Excellence Student Code of Honor (April 2016 &amp; Jan. 2018)</li>
                         <li>Sunnyside Video Production Academy Oscar for Best Match Action (March 2017)</li>
@@ -85,9 +121,12 @@
                 </div>
             </div>
             <div class="display">
-                <img src="http://via.placeholder.com/350x250" alt="">
-                <h1>Extracurricular</h1>
+                <img src="http://via.placeholder.com/350x250" alt=""> 
                 <div class="display_text">
+                    <div class="display_title">
+                        <h1>Extracurricular</h1>
+                        <a><i class="fa fa-close"></i></a>
+                    </div>
                     <ul>
                         <li>Competitor in multiple Sunnyside High League of Legends tournaments (2016-present)</li>
                         <li>Raised money to support kids with cancer and shaved my head - St. Baldrick's Foundation (March 2017-April 2017)</li>
@@ -97,5 +136,24 @@
             </div>
         </div>
     </main>
+    <footer class="footer_flex">
+        <div class="links">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="webdevelopment.html">Web Development</a></li>
+                <li><a href="videoediting.html">Video Editing</a></li>
+                <li><a href="writing.html">Writing</a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <a href=""><i class="fa fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/sosoumvannak-hok-74533714a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <p>Sosoumvannak Hok 2018</p>
+        </div>
+    </footer>
 </body>
 </html>
