@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <display>
+        <media>http://via.placeholder.com/350x250</media>
+        <name>CSS Zen Garden</name>
+        <occu>Web Assignment</occu>
+        <tech>HTML5, CSS3</tech>
+        <soft>Brackets</soft>
+        <date>October 2017</date>
+        <text>While I was taking Web Development classes, I've received an assignment to experiment with CSS on a given HTML prompt. "CSS Zen Garden" is a website dedicated to CSS-based design where anyone could use their HTML code to create custom designs for it. I used Brackets as my text editor and w3schools.com as my reference tool. I've learned so much more about CSS after completing the assignment, creating a website design that I thought was too complex for me to do. I had encountered some situations where the reference tool I was using alone wasn't enough to cope with my design. I managed to get the design I was looking for through research on the Web, where there was tons of information on CSS design. Since then, my design skills for web pages have improved strikingly.</text>
+        <link>link/zengarden/zengarden.html</link>
+    </display>
+</root>

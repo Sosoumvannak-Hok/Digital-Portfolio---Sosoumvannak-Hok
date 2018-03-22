@@ -16,23 +16,30 @@
 }
 
 p {
+    color: #404040;
     font-family: "Open Sans", sans-serif;
 }
 
 a {
+    color: #404040;
     font-family: "Maven Pro", sans-serif;
     text-decoration: none;
 }
 
 li {
+    color: #404040;
     font-family: "Maven Pro", sans-serif;
 }
 
 h1 {
+    color: #404040;
     font-family: "Open Sans", sans-serif;
 }
 
 header {
+    background-color: #ffffff;
+    
+    position: fixed;
     width: 100%;
     z-index: 1;
 }
@@ -46,9 +53,12 @@ footer {
     background-color: #e6e6e6;
 }
 
-.title {
-    padding: 100px 0;
-    text-align: center;
+.img {
+    background: linear-gradient(to top, #f9f9f9, transparent);
+    background-size: cover; 
+    display: block;
+    width: 100%;
+    height: 980px;
 }
 
 /* --------------------------------------- NAVBAR ---------------------------------------- */
@@ -57,13 +67,17 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
     align-content: stretch;
 }
 
 .logo {
-    
+    padding: 3px 0 0 0;
+}
+
+.tabs {
+    max-width: 100%;
 }
 
 .tabs ul {
@@ -88,7 +102,6 @@ footer {
 }
 
 .tabs ul a {
-    color: #000000;
     text-decoration: none;
 }
 
@@ -125,7 +138,6 @@ footer {
 }
 
 .slide .img {
-    background: linear-gradient(to top, #f9f9f9, #000, transparent), url("../img/demo.jpeg") no-repeat center;
     background-size: cover; 
     display: block;
     width: 100%;
@@ -139,6 +151,23 @@ footer {
     width: 70%;
     top: -600px;
     margin: auto;
+}
+
+.slide_text h1 {
+    margin: 5px 0;
+}
+
+.slide_text p {
+    font-size: 16px;
+}
+
+.slide_text a {
+    background-color: #404040;
+    border: 1px solid #404040;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 25px;
 }
 
 .button_left,
@@ -169,6 +198,46 @@ footer {
     top: 69%;
 }
 
+/* --------------------------------------- TITLE ----------------------------------------- */
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    position: relative;
+    top: -380px;
+}
+
+.title .img {
+    height: 800px;
+}
+
+.title_resume .img {
+    background: linear-gradient(to top, #f9f9f9, transparent), url(../img/web_development_bg.jpg) no-repeat center;
+}
+
+.title_web_development .img {
+    background: linear-gradient(to top, #f9f9f9, transparent), url(../img/web_development_bg.jpg) no-repeat center;
+    
+}
+
+.title_video_editing .img {
+    background: linear-gradient(to top, #f9f9f9, transparent), url(../img/video_editing_bg.jpg) no-repeat center;
+}
+
+.title_writing .img {
+    background: linear-gradient(to top, #f9f9f9, transparent), url(../img/web_development_bg.jpg) no-repeat center;
+}
+
+.title_media .img {
+    background: linear-gradient(to top, #f9f9f9, transparent), url(../img/web_development_bg.jpg) no-repeat center;
+}
+
+.title_game .img {
+    background: linear-gradient(to top, #404040, transparent), linear-gradient(to bottom, #f9f9f9, transparent), url(../img/web_development_bg.jpg) no-repeat center;
+}
+
 /* --------------------------------------- CARDS ----------------------------------------- */
 
 .card_container {
@@ -180,12 +249,15 @@ footer {
     align-content: stretch;
     margin: auto;
     max-width: 1200px;
+    
 }
 
 .card {
     background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     margin: 25px;
+    position: relative;
 }
 
 .card img {
@@ -229,6 +301,7 @@ footer {
 .display_container {
     margin: auto;
     max-width: 1200px;
+    height: 500px;
 }
 
 .display {
@@ -242,15 +315,17 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 25px;
     padding: 25px;
+    position: relative;
 }
 
 .display img {
     width: 350px;
-    height: 100%;
+    height: 250px;
 }
 
 .display_text {
-    padding: 0 10px;
+    padding: 0 15px;
+    width: 100%;
 }
 
 .display_title {
@@ -284,6 +359,7 @@ footer {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
+    margin: 150px 0;
 }
 
 .aboutme_bio {
@@ -326,6 +402,7 @@ footer {
     align-content: stretch;
     margin: auto;
     max-width: 1200px;
+    padding: 100px 0;
 }
 
 .media {
@@ -337,7 +414,7 @@ footer {
 }
 
 .media a {
-    color: #000000;
+    color: #404040;
 }
 
 .media i {
@@ -353,6 +430,7 @@ footer {
     align-content: stretch;
     margin: auto;
     max-width: 1200px;
+    padding: 100px 0;
 }
 
 .game {
@@ -364,7 +442,7 @@ footer {
 }
 
 .game a {
-    color: #000000;
+    color: #404040;
 }
 
 /* --------------------------------------- FOOTER ---------------------------------------- */
@@ -373,10 +451,16 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
     align-content: stretch;
-    padding: 10px;
+    padding: 25px 50px;
+}
+
+.footer_flex div:first-child {
+    border-right: 1px solid #404040;
+    padding: 0 10px;
+    margin: 0 10px;
 }
 
 .links {
@@ -396,6 +480,11 @@ footer {
     margin: 10px;
 }
 
-.links a {
-    color: #000000;
+.links_portfolio li:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.links_portfolio li {
+    font-size: 13px;
 }

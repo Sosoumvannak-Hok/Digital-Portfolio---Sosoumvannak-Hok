@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Web Development | Sosoumvannak Hok</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/main.js"></script>
@@ -11,7 +12,7 @@
 <body id="web_development">
     <header class="header_flex">
         <div class="logo">
-            <!--<a href="index.html"><img src="http://via.placeholder.com/100x50" alt=""></a>-->
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
         </div>
         <div class="tabs">
             <ul>
@@ -30,31 +31,32 @@
     </header>
     <main>
         <div class="title title_web_development">
+            <span class="img"></span>
             <h1>Web Development</h1>
         </div>
         <div class="card_container">
-            <div class="card card_css_zen_garden" onclick="webItems[0].displayWebObject();">
-                <img src="http://via.placeholder.com/350x250" alt="">
+            <div class="card card_hover" onclick="appearDisplay('display_css_zen_garden');">
+                <img src="img/css_zen_garden.png" alt="">
                 <div class="card_title">
                     <h1>CSS Zen Garden</h1>
                 </div>
             </div>
-            <div class="card card_the_red_panda" onclick="webItems[1].displayWebObject();">
-                <img src="http://via.placeholder.com/350x250" alt="">
+            <div class="card card_hover" onclick="appearDisplay('display_the_red_panda');">
+                <img src="img/the_red_panda.jpg" alt="">
                 <div class="card_title">
                     <h1>The Red Panda</h1>
                 </div>
             </div>
-            <div class="card card_digital_ethics" onclick="webItems[2].displayWebObject();">
+            <div class="card card_hover" onclick="appearDisplay('display_digital_ethics');">
                 <img src="http://via.placeholder.com/350x250" alt="">
                 <div class="card_title">
                     <h1>Digital Ethics</h1>
                 </div>
             </div>
         </div>
-        <div class="display_container" id="display_web_js">
-            <div class="display display_css_zen_garden">
-                <img src="http://via.placeholder.com/350x250" alt="">
+        <div class="display_container">
+            <div class="display display_css_zen_garden display_fadeup" style="display: none;">
+                <img src="img/css_zen_garden.png" alt="">
                 <div class="display_text">
                     <div class="display_title">
                         <h1>CSS Zen Garden</h1>
@@ -67,11 +69,11 @@
                     <br>
                     <p>While I was taking Web Development classes, I've received an assignment to experiment with CSS on a given HTML prompt. "CSS Zen Garden" is a website dedicated to CSS-based design where anyone could use their HTML code to create custom designs for it. I used Brackets as my text editor and w3schools.com as my reference tool. I've learned so much more about CSS after completing the assignment, creating a website design that I thought was too complex for me to do. I had encountered some situations where the reference tool I was using alone wasn't enough to cope with my design. I managed to get the design I was looking for through research on the Web, where there was tons of information on CSS design. Since then, my design skills for web pages have improved strikingly.</p>
                     <br>
-                    <p>Link: <a href="link/zengarden/zengarden.html" target="_blank">zengarden.html</a></p>
+                    <p>Link: <a href="link/zengarden/zengarden.html" target="_blank">link/zengarden/zengarden.html</a></p>
                 </div>
             </div>
-            <div class="display display_the_red_panda">
-                <img src="http://via.placeholder.com/350x250" alt="">
+            <div class="display display_the_red_panda display_fadeup" style="display: none;">
+                <img src="img/the_red_panda.jpg" alt="">
                 <div class="display_text">
                     <div class="display_title">
                         <h1>The Red Panda</h1>
@@ -87,7 +89,7 @@
                     <p>Link: <a href="http://cartwebapp.com/student17/project1/redpanda1/" target="_blank">http://cartwebapp.com/student17/project1/redpanda1/</a></p>
                 </div>
             </div>
-            <div class="display display_digital_ethics">
+            <div class="display display_digital_ethics display_fadeup" style="display: none;">
                 <img src="http://via.placeholder.com/350x250" alt="">
                 <div class="display_text">
                     <div class="display_title">

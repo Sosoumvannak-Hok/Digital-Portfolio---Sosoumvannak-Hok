@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Resume | Sosomvannak Hok</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/jscript" src="js/main.js"></script>
@@ -11,7 +12,7 @@
 <body id="resume">
     <header class="header_flex">
         <div class="logo">
-            <!--<a href="index.html"><img src="http://via.placeholder.com/100x50" alt=""></a>-->
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
         </div>
         <div class="tabs">
             <ul>
@@ -30,36 +31,43 @@
     </header>
     <main>
         <div class="title title_resume">
-            <h1>My Resume</h1>
+            <span class="img"></span>
+            <h1>Resume</h1>
         </div>
         <div class="card_container">
-            <div class="card">
+            <div class="card card_hover" onclick="appearDisplay('display_education');">
                 <img src="img/education.jpg" alt="">
                 <div class="card_title">
                     <h1>Education</h1>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card_hover" onclick="appearDisplay('display_software');">
                 <img src="http://via.placeholder.com/350x250" alt="">
                 <div class="card_title">
                     <h1>Software</h1>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card_hover" onclick="appearDisplay('display_certifications');">
                 <img src="http://via.placeholder.com/350x250" alt="">
                 <div class="card_title">
                     <h1>Certifications</h1>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card_hover" onclick="appearDisplay('display_extracurricular');">
                 <img src="http://via.placeholder.com/350x250" alt="">
                 <div class="card_title">
                     <h1>Extracurricular</h1>
                 </div>
             </div>
+            <div class="card card_hover" onclick="appearDisplay('display_lor');">
+                <img src="http://via.placeholder.com/350x250" alt="">
+                <div class="card_title">
+                    <h1>Letter of Recommendations</h1>
+                </div>
+            </div>
         </div>
         <div class="display_container">
-            <div class="display">
+            <div class="display display_education display_fadeup" style="display: none;">
                 <img src="http://via.placeholder.com/350x250" alt="">
                 <div class="display_text">
                     <div class="display_title">
@@ -87,7 +95,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="display">
+            <div class="display display_software display_fadeup" style="display: none;">
                 <img src="http://via.placeholder.com/350x250" alt="">
                 <div class="display_text">
                     <div class="display_title">
@@ -105,7 +113,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="display">
+            <div class="display display_certifications display_fadeup" style="display: none;">
                 <img src="http://via.placeholder.com/350x250" alt="">
                 <div class="display_text">
                     <div class="display_title">
@@ -120,7 +128,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="display">
+            <div class="display display_extracurricular display_fadeup" style="display: none;">
                 <img src="http://via.placeholder.com/350x250" alt=""> 
                 <div class="display_text">
                     <div class="display_title">
@@ -131,6 +139,20 @@
                         <li>Competitor in multiple Sunnyside High League of Legends tournaments (2016-present)</li>
                         <li>Raised money to support kids with cancer and shaved my head - St. Baldrick's Foundation (March 2017-April 2017)</li>
                         <li>Activities Director for the GX Anime Club (2017-present)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="display display_lor display_fadeup" style="display: none;">
+                <img src="http://via.placeholder.com/350x250" alt=""> 
+                <div class="display_text">
+                    <div class="display_title">
+                        <h1>Letter of Recommendations</h1>
+                        <a><i class="fa fa-close"></i></a>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quia aperiam ullam explicabo quisquam incidunt? Quae laboriosam fuga autem, nobis fugiat asperiores facere? Alias optio rerum vero ex fuga, iusto!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet in vitae vero quidem magni reiciendis, sunt accusantium. Dolorem quis doloribus non, ullam! Doloribus obcaecati, illo ratione non porro praesentium qui!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga veniam error explicabo. Quas possimus, natus optio, numquam, placeat earum rerum error dignissimos explicabo voluptatibus doloribus architecto ea provident cupiditate beatae.</li>
                     </ul>
                 </div>
             </div>
