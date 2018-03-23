@@ -61,6 +61,15 @@ footer {
     height: 980px;
 }
 
+.special_link {
+    color: #003366;
+    font-weight: bold;
+}
+
+.special_link:hover {
+    color: #3b5998;
+}
+
 /* --------------------------------------- NAVBAR ---------------------------------------- */
 
 .header_flex {
