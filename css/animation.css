@@ -68,6 +68,26 @@
     }
 }
 
+/* --------------------------------------- READ ------------------------------------------ */
+
+.read_fadeup {
+    animation-name: read_fadeup;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes read_fadeup {
+    0% {
+        opacity: 0;
+        top: 25px;
+    }
+    
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
 /* --------------------------------------- ABOUT ----------------------------------------- */
 
 

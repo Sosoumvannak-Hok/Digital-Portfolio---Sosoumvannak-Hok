@@ -39,7 +39,6 @@ h1 {
 
 header {
     background-color: #ffffff;
-    
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -68,9 +67,10 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
+    justify-content: space-between;
+    align-items: center;
     align-content: stretch;
+    padding: 0 25px;
 }
 
 .logo {
@@ -95,11 +95,8 @@ footer {
 }
 
 .tabs ul li:hover {
-    background-color: #f7f7f7;
-}
-
-.tabs ul li:active {
-    background-color: #e6e6e6;
+    text-decoration: underline;
+    
 }
 
 .tabs ul a {
@@ -132,6 +129,23 @@ footer {
     display: block;
 }
 
+.tabs_mobile {
+    display: flex;
+    max-width: 100%;
+    font-size: 35px;
+}
+
+/* -------------------------------------- SIDEBAR ---------------------------------------- */
+
+.sidebar {
+    display: none;
+    background-color: #e6e6e6;
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
 /* ------------------------------------- SLIDESHOW --------------------------------------- */
 
 .slideshow {
@@ -159,16 +173,21 @@ footer {
 }
 
 .slide_text p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .slide_text a {
     background-color: #404040;
     border: 1px solid #404040;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
-    padding: 10px 25px;
+    padding: 10px 20px;
+}
+
+.slide_css_zen_garden,
+.slide_survive_cambodia {
+    text-align: right;
 }
 
 .button_left,
@@ -250,7 +269,6 @@ footer {
     align-content: stretch;
     margin: auto;
     max-width: 1200px;
-    
 }
 
 .card {
@@ -345,7 +363,7 @@ footer {
 
 .display_title a {
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     padding-bottom: 10px;
 }
@@ -369,6 +387,16 @@ footer {
     margin: 25px;
     padding: 50px;
     position: relative;
+}
+
+.read a {
+    font-size: 20px;
+    position: absolute;
+    right: 50px;
+}
+
+.read_text {
+    font-size: 16px;
 }
 
 /* -------------------------------------- ABOUT ME --------------------------------------- */

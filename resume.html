@@ -72,7 +72,7 @@
                 <div class="display_text">
                     <div class="display_title">
                         <h1>Education</h1>
-                        <a><i class="fa fa-close"></i></a>
+                        <a onclick="closeButton('display_education');"><i class="fa fa-close"></i></a>
                     </div>
                     <p><b>Center for Advanced Research and Technology</b> (Aug. 2017-present)</p>
                     <ul>
@@ -100,7 +100,7 @@
                 <div class="display_text">
                     <div class="display_title">
                         <h1>Software</h1>
-                        <a><i class="fa fa-close"></i></a>
+                        <a onclick="closeButton('display_software');"><i class="fa fa-close"></i></a>
                     </div>
                     <p>Here are some of the softwares that I am familiar with:</p>
                     <ul>
@@ -118,7 +118,7 @@
                 <div class="display_text">
                     <div class="display_title">
                         <h1>Certificates</h1>
-                        <a><i class="fa fa-close"></i></a>
+                        <a onclick="closeButton('display_certifications');"><i class="fa fa-close"></i></a>
                     </div>
                     <ul>
                         <li>2 Stand Up for Excellence Student Code of Honor (April 2016 &amp; Jan. 2018)</li>
@@ -133,7 +133,7 @@
                 <div class="display_text">
                     <div class="display_title">
                         <h1>Extracurricular</h1>
-                        <a><i class="fa fa-close"></i></a>
+                        <a onclick="closeButton('display_extracurricular');"><i class="fa fa-close"></i></a>
                     </div>
                     <ul>
                         <li>Competitor in multiple Sunnyside High League of Legends tournaments (2016-present)</li>
@@ -147,18 +147,19 @@
                 <div class="display_text">
                     <div class="display_title">
                         <h1>Letter of Recommendations</h1>
-                        <a><i class="fa fa-close"></i></a>
+                        <a onclick="closeButton('display_lor');"><i class="fa fa-close"></i></a>
                     </div>
                     <ul>
-                        <li>McQuone - Video Production <br><a>Read Me!</a></li>
+                        <li>McQuone - Video Production <br><a onclick="appearRead('read_mcquone');">Read Me!</a></li>
                         <br>
-                        <li>Ashford - English II GATE <br><a>Read Me!</a></li>
+                        <li>Ashford - English II GATE <br><a onclick="appearRead('read_ashford');">Read Me!</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="read_container">
-            <div class="read read_mcquone">
+        <div id="read_container" class="read_container" style="display: none;">
+            <div class="read read_mcquone read_fadeup" style="display: none;">
+                <a onclick="closeButton('read_mcquone');"><i class="fa fa-close"></i></a>
                 <div class="read_text">
                     <p>Katie McQuone</p>
                     <p>Video Production Academy - Coordinator</p>
@@ -179,7 +180,8 @@
                     <p>Katie McQuone</p>
                 </div>
             </div>
-            <div class="read read_ashford">
+            <div class="read read_ashford read_fadeup" style="display: none;">
+                <a onclick="closeButton('read_ashford');"><i class="fa fa-close"></i></a>
                 <div class="read_text">
                     <p>Leslie Ashford, Teacher</p>
                     <p>Sunnyside High School, Fresno Unified School District</p>

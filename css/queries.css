@@ -1,6 +1,22 @@
-@media screen and (max-width: 1280px) {
-    
+@media screen and (min-width: 1024px) {
+    .tabs_mobile {
+        display: none;
+    }
 }
+
+/* --------------------------------------- TABLET ---------------------------------------- */
+
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+    .tabs {
+        display: none;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+}
+
+/* --------------------------------------- PHONE ----------------------------------------- */
 
 @media screen and (max-width: 480px) {
     
