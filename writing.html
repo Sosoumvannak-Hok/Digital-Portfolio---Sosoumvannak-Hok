@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li class="dropdown">Portfolio
+                <li class="dropdown_container">Portfolio
                     <ul class="dropdown_content">
                         <li><a href="webdevelopment.html">Web Development</a></li>
                         <li><a href="videoediting.html">Video Editing</a></li>
@@ -28,8 +28,26 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+        <div class="tabs_mobile">
+            <a onclick="toggleSidebar();"><i class="fa fa-bars"></i></a>
+        </div>
     </header>
     <main>
+        <div id="sidebar" class="sidebar">
+            <p><a onclick="toggleSidebar();"><i class="fa fa-close"></i></a></p>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="dropdown_container"><a onclick="toggleSidebarDropdown();">Portfolio <i class="fa fa-angle-down"></i></a>
+                    <ul id="sidebar_dropdown" class="dropdown_content">
+                        <li><a href="webdevelopment.html">Web Development</a></li>
+                        <li><a href="videoediting.html">Video Editing</a></li>
+                        <li><a href="writing.html">Writing</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </div>
         <div class="title title_writing">
             <span class="img"></span>
             <h1>Writing</h1>
@@ -55,6 +73,82 @@
                     <p>Date: December 2016</p>
                     <br>
                     <p>"Survive Cambodia" is a short story about my father's past during the Cambodia genocide. This was produced as an assignment for my English II GATE class. The specifications for the assignment was to create a short story about cultural conflict. The story can be based on historical events or be fictional. I had to use creative imaginary through words as well as give the story an emotional impact to the reader.  "Survive Cambodia” is both a creative and academic work, for my school and for anyone who want to read about my father's terrifying past. I've chosen my short story to be displayed on my website because of how important it is to me. My father survived a genocide and I want my short story to be based upon it, hoping others would read about it as well.</p>
+                    <br>
+                    <p><a onclick="appearRead('read_survive_cambodia');">Read Me!</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="read_container" class="read_container">
+            <div class="read read_survive_cambodia read_fadeup" style="display: none;">
+                <a onclick="closeButton('read_survive_cambodia');"><i class="fa fa-close"></i></a>
+                <div class="read_text">
+                    <p>12/2/16</p>
+                    <br>
+                    <p>Survive Cambodia</p>
+                    <br>
+                    <p>By Sosoumvannak Hok</p>
+                    <br>
+                    <p>April 1975, it all happened in just a blink of an eye. The Khmer Rouge seized control of Cambodia, and I was just a poor farmer boy at the time. The Khmer Rouge was a Communist organization known for being extremists and killing those who were educated. As a child, I didn’t know why they were after us, killing us, torturing us, and imprisoning us. We were the same as them in almost every way: same culture, same race, but different positions in life.</p>
+                    <br>
+                    <p>As Communist soldiers were banging on the door, I was held tightly by mother and father, crying in fear in their arms. The same goes with my four younger siblings, all scared as much as I was. We were all huddled up at the corner of the room, which didn’t really do much but it was all that we can do.</p>
+                    <br>
+                    <p>“CRASH!” the door goes, as two Communist soldiers barged in, with their rifles pointing at us, as they look at us with cold, dead eyes.</p>
+                    <br>
+                    <p>“Please don’t kill us! Please don’t kill us! Please don’t kill us!” my mother screams, holding us tighter in her arms.</p>
+                    <br>
+                    <p>“Please, you don’t have to do this!” my father yelled, “Have mercy on our poor lives!”</p>
+                    <br>
+                    <p>“Who’s the eldest child?” the soldier on the left said with silences afterwards. The soldier on the right shoots one bullet at the ground in front of us and yelled “Answer us, or we’ll shoot!” Mother and father said nothing, to not put me, the eldest child, at the hands of ruthless people.</p>
+                    <br>
+                    <p>“One…” The left soldier began counting. “Two…” We were on the verged of death, but I finally stood up and answered “Me, it’s me! I’m the eldest child! Take me! Please just don’t hurt my family!” The two soldiers lowered their rifles.</p>
+                    <br>
+                    <p>As I stand to be taken by Communist hands, my mother and father couldn’t let go of my arm. One of the soldiers then pulled me out of there and tied my hands together.</p>
+                    <br>
+                    <p>“Sophal!” mother yelled, as she witness me; her first-born child separated from the family.</p>
+                    <br>
+                    <p>“Big brother, please don’t go!” said Dolly, my little sister, who loved everyone in our family.</p>
+                    <br>
+                    <p>I did not look back at them. I did not look at the faces of my family as I leave with the soldiers, knowing that there’s a possibility of me getting shot for turning my back around.</p>
+                    <br>
+                    <p>I left the house with the two soldiers behind me, and then I was taken into a large truck filled with many people, all male and all the same age as me. They seem to be in the same state that I’m in right now; frightened, confused, and worried. Both soldiers ordered me to go in so I do as they said. They start up the truck and proceed on to their next destination.</p>
+                    <br>
+                    <p>Time passes by, and everyone in the truck was still the same; all quiet, all hopeless, including me. Throughout the whole trip, I thought about my life and my family, as I was going to lose them both. I wonder, why are we being treated like cattle, why are they going against their own people, and where are they taking us?</p>
+                    <br>
+                    <p>Even more time passes by, and we finally arrived at our destination. We have entered to what appears to be a camp right next to the fields. The two soldiers suddenly stopped the truck, jumped out, and ordered everyone inside to get out. One by one, we all got off and filed in a straight line, facing the huts.</p>
+                    <br>
+                    <p>As we wait for something to happen, someone appeared from one of the huts. That someone was wearing a military uniform, with the Khmer Rouge symbol on his right arm and a gun. As he walks to examine us thoroughly, he looked at us with the same eyes as those of the two soldiers back at my house. After a long examination, he finally speaks.</p>
+                    <br>
+                    <p>“From this point forward, this is your new life,” he said in a vigorous voice, “Welcome to camp, and I expect everyone in top working conditions. If anyone disobeys an order…” he fires a bullet up in the air. “If anyone tries to escape…” another bullet was fired. “If anyone disrespects us…” a third bullet was fired.</p>
+                    <br>
+                    <p>He keeps on doing this until he ran out of bullets to fire. He then went back to the hut that he was in and from the soldiers; we received a pair of black shirts and black pants with different numbers on each pair indicating that we were all prisoners. Afterwards, everyone was even more frightened that they didn’t make a single sound, especially me.</p>
+                    <br>
+                    <p>Right off the bat, we’ve already started working in the fields wearing “uniform”. During the long work hours, I’ve witnessed many people suffering, dying, and all I could do was ignore and keep on working. At night, when most of us try to sleep, more captured people were sent here but they weren’t here to work, they were here to be executed.</p>
+                    <br>
+                    <p>January 1979, four long years of my life had passed in this death camp. Nothing really changed for the time being, except the fact that the dead bodies were stacked all over the fields, making it harder for us to work. At the time, it was all hopeless for everybody.</p>
+                    <br>
+                    <p>Suddenly, as I was working in the field as always, gun shots were fired but it wasn’t at the field. In my surprise, it turns out that the gun shots were coming from outside the camp. For what I can see, the Khmer Rouge was firing at the Resistance. For us prisoners, we were panicking a bit, hoping for the best outcome possible.</p>
+                    <br>
+                    <p>The fighting has stopped, and we look to see who won. In the end, the Resistances claims victorious and as they enter in the camp, big trucks with the Red Cross symbol came along with them. All the prisoners and I came rushing to them, in desperate need of their aid.</p>
+                    <br>
+                    <p>We were then transported to a refugee camp where most of the survivors were brought to. In the camp, I tried looking for my family to see if they were lucky enough to make it here, or at least some. Then, a miracle happened.</p>
+                    <br>
+                    <p>“Mama, Papa!” I yelled in the distances.</p>
+                    <br>
+                    <p>“Huh? That voice… it sounds like Sophal!”</p>
+                    <br>
+                    <p>“Sophal, can it be?” said mother.</p>
+                    <br>
+                    <p>“It’s him! It’s him!” Dolly cried.</p>
+                    <br>
+                    <p>They all looked at me and made the face of pure relief with a smile, which is something I’ve never seen from my time in the death camp. I immediately rush to them, giving them most loving hug possible. We all fell to the ground in tears of joy, arms wrapped all over me.</p>
+                    <br>
+                    <p>From that point forward, the next thing I knew was that my entire family and I are now immigrants to the United State, the Land of Opportunity, in hopes of receiving a better life and future. We were truly lucky enough to survive all the horrors we have witnessed. We were grateful.</p>
+                </div>
+            </div>
+            <div class="read read_temp read_fadeup" style="display: none;">
+                <a onclick="closeButton('read_temp');"><i class="fa fa-close"></i></a>
+                <div class="read_text">
+                    <p>12/2/16</p>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li class="dropdown">Portfolio
+                <li class="dropdown_container">Portfolio
                     <ul class="dropdown_content">
                         <li><a href="webdevelopment.html">Web Development</a></li>
                         <li><a href="videoediting.html">Video Editing</a></li>
@@ -28,8 +28,26 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+        <div class="tabs_mobile">
+            <a onclick="toggleSidebar();"><i class="fa fa-bars"></i></a>
+        </div>
     </header>
     <main>
+        <div id="sidebar" class="sidebar">
+            <p><a onclick="toggleSidebar();"><i class="fa fa-close"></i></a></p>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="dropdown_container"><a onclick="toggleSidebarDropdown();">Portfolio <i class="fa fa-angle-down"></i></a>
+                    <ul id="sidebar_dropdown" class="dropdown_content">
+                        <li><a href="webdevelopment.html">Web Development</a></li>
+                        <li><a href="videoediting.html">Video Editing</a></li>
+                        <li><a href="writing.html">Writing</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </div>
         <div class="title title_web_development">
             <span class="img"></span>
             <h1>Web Development</h1>
@@ -60,7 +78,7 @@
                 <div class="display_text">
                     <div class="display_title">
                         <h1>CSS Zen Garden</h1>
-                        <a><i class="fa fa-close"></i></a>
+                        <a onclick="closeButton('display_css_zen_garden');"><i class="fa fa-close"></i></a>
                     </div>
                     <p>Occupation: Web Assignment</p>
                     <p>Technologies: <i>HTML5</i>, <i>CSS3</i></p>
@@ -69,7 +87,7 @@
                     <br>
                     <p>While I was taking Web Development classes, I've received an assignment to experiment with CSS on a given HTML prompt. <a class="special_link" href="http://www.csszengarden.com/" target="_blank">"CSS Zen Garden"</a> is a website dedicated to CSS-based design where anyone could use their HTML code to create custom designs for it. I used Brackets as my text editor and <a class="special_link" href="https://www.w3schools.com/" target="_blank">w3schools.com</a> as my reference tool. I've learned so much more about CSS after completing the assignment, creating a website design that I thought was too complex for me to do. I had encountered some situations where the reference tool I was using alone wasn't enough to cope with my design. I managed to get the design I was looking for through research on the Web, where there was tons of information on CSS design. Since then, my design skills for web pages have improved strikingly.</p>
                     <br>
-                    <p>Link: <a href="link/zengarden/zengarden.html" target="_blank">link/zengarden/zengarden.html</a></p>
+                    <p>Link: <a class="special_link" href="link/zengarden/zengarden.html" target="_blank">link/zengarden/zengarden.html</a></p>
                 </div>
             </div>
             <div class="display display_the_red_panda display_fadeup" style="display: none;">
@@ -77,7 +95,7 @@
                 <div class="display_text">
                     <div class="display_title">
                         <h1>The Red Panda</h1>
-                        <a><i class="fa fa-close"></i></a>
+                        <a onclick="closeButton('display_the_red_panda');"><i class="fa fa-close"></i></a>
                     </div>
                     <p>Occupation: Team Project</p>
                     <p>Technologies: <i>HTML5</i>, <i>CSS3</i></p>
@@ -86,7 +104,7 @@
                     <br>
                     <p>After gaining the basic knowledge of HTML and CSS, I was assigned a project and placed in a team of three to create a website about the red pandas. The website was dedicated to spread the awareness of the near extinction of red pandas. We gathered research on the endangered animal, created design mock-ups, and developed the final product. Each step of the process had some challenges for me and my peers to go through; messy code, miscommunications, and design arguments. At the final stages of development, we managed to complete the website before the deadline. It was tough at first, but it worked at the end, gaining experience on how developing content in a team towards me and everyone else. Now, the next time I do a team project, I will be better prepared.</p>
                     <br>
-                    <p>Link: <a href="http://cartwebapp.com/student17/project1/redpanda1/" target="_blank">http://cartwebapp.com/student17/project1/redpanda1/</a></p>
+                    <p>Link: <a class="special_link" href="http://cartwebapp.com/student17/project1/redpanda1/" target="_blank">http://cartwebapp.com/student17/project1/redpanda1/</a></p>
                 </div>
             </div>
             <div class="display display_digital_ethics display_fadeup" style="display: none;">
@@ -94,7 +112,7 @@
                 <div class="display_text">
                     <div class="display_title">
                         <h1>Digital Ethics</h1>
-                        <a><i class="fa fa-close"></i></a>
+                        <a onclick="closeButton('display_digital_ethics');"><i class="fa fa-close"></i></a>
                     </div>
                     <p>Occupation: Class Project</p>
                     <p>Technologies: <i>HTML5</i>, <i>CSS3</i>, <i>JavaScript</i></p>
@@ -103,7 +121,7 @@
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quasi. Non fugiat quasi laborum veritatis atque enim tempora doloribus, tempore eos! Quaerat minus temporibus exercitationem quidem tempore sunt, sed aperiam.</p>
                     <br>
-                    <p>Link: <a href="http://cartwebapp.com/student17/showcase/pm/index.html" target="_blank">http://cartwebapp.com/student17/showcase/pm/index.html</a></p>
+                    <p>Link: <a class="special_link" href="http://cartwebapp.com/student17/showcase/pm/index.html" target="_blank">http://cartwebapp.com/student17/showcase/pm/index.html</a></p>
                 </div>
             </div>
         </div>

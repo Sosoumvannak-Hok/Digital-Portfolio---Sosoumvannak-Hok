@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Contact | Sosoumvannak Hok</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/jscript" src="js/main.js"></script>
@@ -17,7 +18,7 @@
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li class="dropdown">Portfolio
+                <li class="dropdown_container">Portfolio
                     <ul class="dropdown_content">
                         <li><a href="webdevelopment.html">Web Development</a></li>
                         <li><a href="videoediting.html">Video Editing</a></li>
@@ -27,8 +28,26 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+        <div class="tabs_mobile">
+            <a onclick="toggleSidebar();"><i class="fa fa-bars"></i></a>
+        </div>
     </header>
     <main>
+        <div id="sidebar" class="sidebar">
+            <p><a onclick="toggleSidebar();"><i class="fa fa-close"></i></a></p>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="dropdown_container"><a onclick="toggleSidebarDropdown();">Portfolio <i class="fa fa-angle-down"></i></a>
+                    <ul id="sidebar_dropdown" class="dropdown_content">
+                        <li><a href="webdevelopment.html">Web Development</a></li>
+                        <li><a href="videoediting.html">Video Editing</a></li>
+                        <li><a href="writing.html">Writing</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </div>
         <div class="title title_media">
             <span class="img"></span>
             <h1>My Contacts</h1>

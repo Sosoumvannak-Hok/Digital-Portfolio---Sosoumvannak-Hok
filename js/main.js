@@ -1,4 +1,4 @@
-/* ------------------------------------- SLIDEBAR ---------------------------------------- */
+/* ------------------------------------- SIDEBAR ----------------------------------------- */
 
 function toggleSidebar() {
     
@@ -8,6 +8,17 @@ function toggleSidebar() {
         sidebar.style.display = "none";
     } else {
         sidebar.style.display = "block";
+    }
+}
+
+function toggleSidebarDropdown() {
+    
+    sidebar_dropdown = document.getElementById("sidebar_dropdown");
+    
+    if (sidebar_dropdown.style.display === "block") {
+        sidebar_dropdown.style.display = "none";
+    } else {
+        sidebar_dropdown.style.display = "block";
     }
 }
 
@@ -56,19 +67,22 @@ function disappearTotalRead() {
 }
 
 function appearDisplay(type) {
+    
+    read_container = document.getElementById("read_container");
+    
     for (i = 0; i < totalDisplay.length; i++) {
         totalDisplay[i].style.display = "none";
     }
     
     document.getElementsByClassName(type)[0].style.display = "flex";
     
-    if (type == 'display_lor') {
-        document.getElementById("read_container").style.display = "block";
+    if (type == 'display_lor' || type == 'display_survive_cambodia') {
+        read_container.style.display = "block";
     } else {
         disappearTotalRead();
         
-        if (document.getElementById("read_container") !== null) {
-            document.getElementById("read_container").style.display = "none";
+        if (read_container !== null) {
+            read_container.style.display = "none";
         }
     }
 }

@@ -112,12 +112,12 @@ footer {
     text-decoration: none;
 }
 
-.tabs .dropdown {
+.tabs .dropdown_container {
     display: inline-block;
     position: relative;
 }
 
-.tabs .dropdown .dropdown_content {
+.tabs .dropdown_container .dropdown_content {
     display: none;
     background-color: #f9f9f9;
     padding: 0;
@@ -128,13 +128,13 @@ footer {
     left: .5px;
 }
 
-.tabs .dropdown .dropdown_content li {
+.tabs .dropdown_container .dropdown_content li {
     display: block;
     margin: 0;
     padding: 15px;
 }
 
-.tabs .dropdown:hover .dropdown_content {
+.tabs .dropdown_container:hover .dropdown_content {
     display: block;
 }
 
@@ -149,11 +149,38 @@ footer {
 .sidebar {
     display: none;
     background-color: #e6e6e6;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.75);
     width: 400px;
     height: 100%;
     position: fixed;
     z-index: 1;
 }
+
+.sidebar p {
+    font-size: 25px;
+    margin: auto;
+    text-align: right;
+    width: 85%;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    font-size: 20px;
+    padding: 20px 0 0 0;
+    width: 85%;
+}
+
+.sidebar .dropdown_container {
+    
+}
+
+.sidebar .dropdown_container .dropdown_content {
+    display: none;
+}
+
 
 /* ------------------------------------- SLIDESHOW --------------------------------------- */
 
