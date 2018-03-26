@@ -1,13 +1,17 @@
 /* ------------------------------------- SIDEBAR ----------------------------------------- */
 
+var toggle_sidebar = false;
+
 function toggleSidebar() {
     
     sidebar = document.getElementById("sidebar");
     
-    if (sidebar.style.display === "block") {
-        sidebar.style.display = "none";
+    if (toggle_sidebar == true) {
+        sidebar.setAttribute("class", "sidebar sidebar_disappearleft");
+        toggle_sidebar = false;
     } else {
-        sidebar.style.display = "block";
+        sidebar.setAttribute("class", "sidebar sidebar_appearleft");
+        toggle_sidebar = true;
     }
 }
 

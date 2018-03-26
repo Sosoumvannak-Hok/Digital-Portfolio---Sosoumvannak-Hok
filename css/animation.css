@@ -1,3 +1,38 @@
+/* -------------------------------------- SIDEBAR --------------------------------------- */
+
+.sidebar_appearleft {
+    animation-name: sidebar_appearleft;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes sidebar_appearleft {
+    0% {
+        left: -400px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.sidebar_disappearleft {
+    animation-name: sidebar_disappearleft;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes sidebar_disappearleft {
+    0% {
+        left: 0;
+    }
+    
+    100% {
+        left: -400px;
+    }
+}
+
 /* ------------------------------------- SLIDESHOW --------------------------------------- */
 
 .slide_fadein {

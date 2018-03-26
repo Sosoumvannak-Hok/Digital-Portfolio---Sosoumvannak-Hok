@@ -404,6 +404,17 @@ footer {
     padding-bottom: 10px;
 }
 
+.read_me {
+    font-size: 17px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 150px;
+}
+
+.read_me a {
+    
+}
+
 /* --------------------------------------- READ ------------------------------------------ */
 
 .read_container {
