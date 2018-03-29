@@ -377,6 +377,10 @@ footer {
     height: 250px;
 }
 
+.display_lor ul li {
+    margin: 10px 0;
+}
+
 .display_text {
     padding: 0 15px;
     width: 100%;
@@ -405,14 +409,41 @@ footer {
 }
 
 .read_me {
+    display: block;
+    background-color: #404040;
+    color: #ffffff;
     font-size: 17px;
-    padding: 10px 15px;
+    margin: 10px 0;
+    padding: 5px 15px;
     text-align: center;
-    width: 150px;
+    width: 250px;
 }
 
 .read_me a {
-    
+    color: #ffffff;
+}
+
+/* --------------------------------- MINI SLIDESHOW -------------------------------------- */
+
+.mini_slideshow {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.mini_slides {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    padding: 25px;
+}
+
+.mini_slide img {
+    display: block;
+    margin: auto;
+}
+
+.mini_slide p {
+    text-align: center;
 }
 
 /* --------------------------------------- READ ------------------------------------------ */

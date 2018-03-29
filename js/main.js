@@ -59,6 +59,39 @@ function changeSlide(num) {
     totalSlide[num - 1].style.display = "block";
 }
 
+/* --------------------------------- MINI SLIDESHOW -------------------------------------- */
+
+var currentMiniSlide = 1;
+var totalMiniSlide = document.getElementsByClassName("mini_slide");
+
+function prevMini() {
+    if (currentMiniSlide > 1) {
+        currentMiniSlide--;
+    } else {
+        currentSlide = totalMiniSlide.length;
+    }
+    
+    changeMiniSlide(currentMiniSlide);
+}
+
+function nextMini() {
+    if (currentMiniSlide < totalMiniSlide.length) {
+        currentMiniSlide++;
+    } else {
+        currentMiniSlide = 1;
+    }
+    
+    changeMiniSlide(currentMiniSlide);
+}
+
+function changeMiniSlide(num) {
+    for (i = 0; i < totalMiniSlide.length; i++) {
+        totalMiniSlide[i].style.display = "none";
+    }
+    
+    totalMiniSlide[num - 1].style.display = "block";
+}
+
 /* --------------------------------- DISPLAY & READ -------------------------------------- */
 
 var totalDisplay = document.getElementsByClassName("display");
