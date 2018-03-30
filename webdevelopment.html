@@ -89,7 +89,7 @@
                     <br>
                     <p>Link: <a class="special_link" href="link/zengarden/zengarden.html" target="_blank">link/zengarden/zengarden.html</a></p>
                     <br>
-                    <p><a class="read_me" onclick="">View Code Snippets</a></p>
+                    <p><a class="read_me" onclick="appearMiniSlideshow('mini_slides_css_zen_garden');">View Code Snippets</a></p>
                 </div>
             </div>
             <div class="display display_the_red_panda display_fadeup" style="display: none;">
@@ -108,7 +108,7 @@
                     <br>
                     <p>Link: <a class="special_link" href="http://cartwebapp.com/student17/project1/redpanda1/" target="_blank">http://cartwebapp.com/student17/project1/redpanda1/</a></p>
                     <br>
-                    <p><a class="read_me" onclick="">View Code Snippets</a></p>
+                    <p><a class="read_me" onclick="appearMiniSlideshow('mini_slides_the_red_panda');">View Code Snippets</a></p>
                 </div>
             </div>
             <div class="display display_digital_ethics display_fadeup" style="display: none;">
@@ -127,25 +127,60 @@
                     <br>
                     <p>Link: <a class="special_link" href="http://cartwebapp.com/student17/showcase/pm/index.html" target="_blank">http://cartwebapp.com/student17/showcase/pm/index.html</a></p>
                     <br>
-                    <p><a class="read_me" onclick="">View Code Snippets</a></p>
+                    <p><a class="read_me" onclick="appearMiniSlideshow('mini_slides_digital_ethics');">View Code Snippets</a></p>
                 </div>
             </div>
         </div>
-        <div id="mini_slideshow" class="mini_slideshow">
-            <div class="mini_slides mini_slides_css_zen_garden">
-                <div class="mini_slide">
+        <div id="mini_slideshow" class="mini_slideshow" style="display: none;">
+            <div class="mini_slides mini_slides_css_zen_garden" style="display: none;">
+                <a class="close_button" onclick="closeButton('mini_slides_css_zen_garden');"><i class="fa fa-close"></i></a>
+                <div class="mini_slide mini_slide_css_zen_garden" style="display: none;">
                     <img src="http://via.placeholder.com/1080x608" alt="">
                     <p>1/2</p>
-                    <p>HTML</p>
+                    <p>CSS Zen Garden HTML</p>
                 </div>
-                <div class="mini_slide">
+                <div class="mini_slide mini_slide_css_zen_garden" style="display: none;">
                     <img src="http://via.placeholder.com/1080x608" alt="">
                     <p>2/2</p>
-                    <p>CSS</p>
+                    <p>CSS Zen Garden CSS</p>
                 </div>
                 <div class="mini_slide_buttons">
-                    <a class="" onclick=""><i class="fa fa-angle-left"></i></a>
-                    <a class="" onclick=""><i class="fa fa-angle-right"></i></a>
+                    <a class="mini_button_left" onclick="prevMiniCZG()"><i class="fa fa-angle-left"></i></a>
+                    <a class="mini_button_right" onclick="nextMiniCZG()"><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="mini_slides mini_slides_the_red_panda" style="display: none;">
+                <a class="close_button" onclick="closeButton('mini_slides_the_red_panda');"><i class="fa fa-close"></i></a>
+                <div class="mini_slide mini_slide_the_red_panda" style="display: none;">
+                    <img src="http://via.placeholder.com/1080x608" alt="">
+                    <p>1/2</p>
+                    <p>The Red Panda HTML</p>
+                </div>
+                <div class="mini_slide mini_slide_the_red_panda" style="display: none;">
+                    <img src="http://via.placeholder.com/1080x608" alt="">
+                    <p>2/2</p>
+                    <p>The Red Panda CSS</p>
+                </div>
+                <div class="mini_slide_buttons">
+                    <a class="mini_button_left" onclick="prevMiniTRP()"><i class="fa fa-angle-left"></i></a>
+                    <a class="mini_button_right" onclick="nextMiniTRP()"><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="mini_slides mini_slides_digital_ethics" style="display: none;">
+                <a class="close_button" onclick="closeButton('mini_slides_digital_ethics');"><i class="fa fa-close"></i></a>
+                <div class="mini_slide mini_slide_digital_ethics" style="display: none;">
+                    <img src="http://via.placeholder.com/1080x608" alt="">
+                    <p>1/2</p>
+                    <p>Digital Ethics HTML</p>
+                </div>
+                <div class="mini_slide mini_slide_digital_ethics" style="display: none;">
+                    <img src="http://via.placeholder.com/1080x608" alt="">
+                    <p>2/2</p>
+                    <p>Digital Ethics CSS</p>
+                </div>
+                <div class="mini_slide_buttons">
+                    <a class="mini_button_left" onclick="prevMiniDE()"><i class="fa fa-angle-left"></i></a>
+                    <a class="mini_button_right" onclick="nextMiniDE()"><i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>

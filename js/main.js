@@ -62,34 +62,138 @@ function changeSlide(num) {
 /* --------------------------------- MINI SLIDESHOW -------------------------------------- */
 
 var currentMiniSlide = 1;
+var totalMiniSlides = document.getElementsByClassName("mini_slides");
 var totalMiniSlide = document.getElementsByClassName("mini_slide");
+var totalMiniSlideCZG = document.getElementsByClassName("mini_slide_css_zen_garden");
+var totalMiniSlideTRP = document.getElementsByClassName("mini_slide_the_red_panda");
+var totalMiniSlideDE = document.getElementsByClassName("mini_slide_digital_ethics");
 
-function prevMini() {
+function prevMiniCZG() {
+    
+    console.log(currentMiniSlide);
+    
     if (currentMiniSlide > 1) {
         currentMiniSlide--;
     } else {
-        currentSlide = totalMiniSlide.length;
+        currentMiniSlide = totalMiniSlideCZG.length;
     }
     
-    changeMiniSlide(currentMiniSlide);
+    changeMiniSlideCZG(currentMiniSlide);
 }
 
-function nextMini() {
-    if (currentMiniSlide < totalMiniSlide.length) {
+function nextMiniCZG() {
+    if (currentMiniSlide < totalMiniSlideCZG.length) {
         currentMiniSlide++;
     } else {
         currentMiniSlide = 1;
     }
     
-    changeMiniSlide(currentMiniSlide);
+    changeMiniSlideCZG(currentMiniSlide);
 }
 
-function changeMiniSlide(num) {
+function changeMiniSlideCZG(num) {
+    for (i = 0; i < totalMiniSlideCZG.length; i++) {
+        totalMiniSlideCZG[i].style.display = "none";
+    }
+    
+    totalMiniSlideCZG[num - 1].style.display = "block";
+}
+
+function prevMiniTRP() {
+    if (currentMiniSlide > 1) {
+        currentMiniSlide--;
+    } else {
+        currentMiniSlide = totalMiniSlideTRP.length;
+    }
+    
+    changeMiniSlideTRP(currentMiniSlide);
+}
+
+function nextMiniTRP() {
+    if (currentMiniSlide < totalMiniSlideTRP.length) {
+        currentMiniSlide++;
+    } else {
+        currentMiniSlide = 1;
+    }
+    
+    changeMiniSlideTRP(currentMiniSlide);
+}
+
+function changeMiniSlideTRP(num) {
+    for (i = 0; i < totalMiniSlideTRP.length; i++) {
+        totalMiniSlideTRP[i].style.display = "none";
+    }
+    
+    totalMiniSlideTRP[num - 1].style.display = "block";
+}
+
+function prevMiniDE() {
+    if (currentMiniSlide > 1) {
+        currentMiniSlide--;
+    } else {
+        currentMiniSlide = totalMiniSlideDE.length;
+    }
+    
+    changeMiniSlideDE(currentMiniSlide);
+}
+
+function nextMiniDE() {
+    if (currentMiniSlide < totalMiniSlideDE.length) {
+        currentMiniSlide++;
+    } else {
+        currentMiniSlide = 1;
+    }
+    
+    changeMiniSlideDE(currentMiniSlide);
+}
+
+function changeMiniSlideDE(num) {
+    for (i = 0; i < totalMiniSlideDE.length; i++) {
+        totalMiniSlideDE[i].style.display = "none";
+    }
+    
+    totalMiniSlideDE[num - 1].style.display = "block";
+}
+
+function disappearTotalMiniSlides() {
+    for (i = 0; i < totalMiniSlides.length; i++) {
+        totalMiniSlides[i].style.display = "none";
+    }
+}
+
+function disappearTotalMiniSlide() {
     for (i = 0; i < totalMiniSlide.length; i++) {
         totalMiniSlide[i].style.display = "none";
     }
+}
+
+function appearMiniSlideshow(type) {
     
-    totalMiniSlide[num - 1].style.display = "block";
+    console.log(type);
+    
+    resetIndex();
+    
+    mini_slideshow = document.getElementById("mini_slideshow");
+    mini_slideshow.style.display = "block";
+    
+    disappearTotalMiniSlides();
+    disappearTotalMiniSlide();
+    
+    document.getElementsByClassName(type)[0].style.display = "block";
+    
+    switch (type) {
+        case "mini_slides_css_zen_garden":
+            document.getElementsByClassName("mini_slide_css_zen_garden")[0].style.display = "block";
+            break;
+        case "mini_slides_the_red_panda":
+            document.getElementsByClassName("mini_slide_the_red_panda")[0].style.display = "block";
+            break;
+        case "mini_slides_digital_ethics":
+            document.getElementsByClassName("mini_slide_digital_ethics")[0].style.display = "block";
+            break;
+        default:
+            console.log("idk");
+    }
 }
 
 /* --------------------------------- DISPLAY & READ -------------------------------------- */
@@ -111,13 +215,13 @@ function appearDisplay(type) {
         totalDisplay[i].style.display = "none";
     }
     
+    disappearTotalRead();
+    
     document.getElementsByClassName(type)[0].style.display = "flex";
     
-    if (type == 'display_lor' || type == 'display_survive_cambodia') {
+    if (type == 'display_lor' || type == 'display_survive_cambodia' || type == 'display_rpo') {
         read_container.style.display = "block";
     } else {
-        disappearTotalRead();
-        
         if (read_container !== null) {
             read_container.style.display = "none";
         }
@@ -129,7 +233,17 @@ function appearRead(type) {
     document.getElementsByClassName(type)[0].style.display = "flex";
 }
 
+/* ----------------------------------- UNIVERSAL ----------------------------------------- */
+
+function resetIndex() {
+    currentMiniSlide = 1;
+}
+
 function closeButton(type) {
+    disappearTotalMiniSlides();
+    disappearTotalMiniSlide();
+    resetIndex();
     disappearTotalRead();
     document.getElementsByClassName(type)[0].style.display = "none";
+    document.getElementById("mini_slideshow").style.display = "none";
 }
