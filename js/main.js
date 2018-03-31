@@ -70,8 +70,6 @@ var totalMiniSlideDE = document.getElementsByClassName("mini_slide_digital_ethic
 
 function prevMiniCZG() {
     
-    console.log(currentMiniSlide);
-    
     if (currentMiniSlide > 1) {
         currentMiniSlide--;
     } else {
@@ -169,8 +167,6 @@ function disappearTotalMiniSlide() {
 
 function appearMiniSlideshow(type) {
     
-    console.log(type);
-    
     resetIndex();
     
     mini_slideshow = document.getElementById("mini_slideshow");
@@ -192,18 +188,25 @@ function appearMiniSlideshow(type) {
             document.getElementsByClassName("mini_slide_digital_ethics")[0].style.display = "block";
             break;
         default:
-            console.log("idk");
+            console.log("error");
     }
 }
 
-/* --------------------------------- DISPLAY & READ -------------------------------------- */
+/* ---------------------------- DISPLAY / READ / VIDEO ----------------------------------- */
 
 var totalDisplay = document.getElementsByClassName("display");
 var totalRead = document.getElementsByClassName("read");
+var totalVideo = document.getElementsByClassName("video");
 
 function disappearTotalRead() {
     for (i = 0; i < totalRead.length; i++) {
         totalRead[i].style.display = "none";
+    }
+}
+
+function disappearTotalVideo() {
+    for (i = 0; i < totalVideo.length; i++) {
+        totalVideo[i].style.display = "none";
     }
 }
 
@@ -215,7 +218,10 @@ function appearDisplay(type) {
         totalDisplay[i].style.display = "none";
     }
     
+    disappearTotalMiniSlides();
+    disappearTotalMiniSlide();
     disappearTotalRead();
+    disappearTotalVideo();
     
     document.getElementsByClassName(type)[0].style.display = "flex";
     
@@ -233,6 +239,11 @@ function appearRead(type) {
     document.getElementsByClassName(type)[0].style.display = "flex";
 }
 
+function appearVideo(type) {
+    disappearTotalVideo();
+    document.getElementsByClassName(type)[0].style.display = "block";
+}
+
 /* ----------------------------------- UNIVERSAL ----------------------------------------- */
 
 function resetIndex() {
@@ -244,6 +255,7 @@ function closeButton(type) {
     disappearTotalMiniSlide();
     resetIndex();
     disappearTotalRead();
+    disappearTotalVideo();
     document.getElementsByClassName(type)[0].style.display = "none";
     document.getElementById("mini_slideshow").style.display = "none";
 }

@@ -103,6 +103,46 @@
     }
 }
 
+/* --------------------------------- MINI SLIDESHOW -------------------------------------- */
+
+.mini_slideshow_fadup {
+    animation-name: mini_slideshow_fadup;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mini_slideshow_fadup {
+    0% {
+        opacity: 0;
+        top: 25px;
+    }
+    
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+/* --------------------------------------- VIDEO ----------------------------------------- */
+
+.video_fadeup {
+    animation-name: video_fadeup;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes video_fadeup {
+    0% {
+        opacity: 0;
+        top: 25px;
+    }
+    
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
 /* --------------------------------------- READ ------------------------------------------ */
 
 .read_fadeup {
