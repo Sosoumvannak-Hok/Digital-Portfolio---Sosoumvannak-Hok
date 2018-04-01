@@ -377,6 +377,10 @@ footer {
     height: 250px;
 }
 
+.display ul li {
+    line-height: 25px;
+}
+
 .display_lor ul li {
     margin: 10px 0;
 }
