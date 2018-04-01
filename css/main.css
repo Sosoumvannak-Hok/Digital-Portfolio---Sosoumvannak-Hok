@@ -428,7 +428,6 @@ footer {
 .mini_slideshow {
     margin: auto;
     max-width: 1200px;
-    position: relative;
 }
 
 .mini_slides {
@@ -436,6 +435,7 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 25px;
     padding: 35px;
+    position: relative;
 }
 
 .mini_slides .close_button {
@@ -454,6 +454,11 @@ footer {
     text-align: center;
 }
 
+.mini_slide_buttons {
+    text-align: center;
+    padding: 15px 0;
+}
+
 .mini_button_left,
 .mini_button_right {
     background-color: #404040;
@@ -461,7 +466,7 @@ footer {
     cursor: pointer;
     font-size: 35px;
     opacity: 0.5;
-    padding: 10px 15px;
+    padding: 10px 25px;
 }
 
 .mini_button_left:hover, 
@@ -517,6 +522,11 @@ footer {
 
 .read_text {
     font-size: 16px;
+    line-height: 35px;
+}
+
+.indent {
+    text-indent: 50px;
 }
 
 /* -------------------------------------- ABOUT ME --------------------------------------- */
@@ -583,7 +593,7 @@ footer {
 }
 
 .media a {
-    color: #404040;
+    
 }
 
 .media i {
