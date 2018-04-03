@@ -59,6 +59,18 @@ function changeSlide(num) {
     totalSlide[num - 1].style.display = "block";
 }
 
+/* -------------------------------------- CARDS ------------------------------------------ */
+
+function card_hover_up(type) {
+    type.classList.remove("card_hover_down");
+    type.classList.add("card_hover_up");
+}
+
+function card_hover_down(type) {
+    type.classList.remove("card_hover_up");
+    type.classList.add("card_hover_down");
+}
+
 /* --------------------------------- MINI SLIDESHOW -------------------------------------- */
 
 var currentMiniSlide = 1;
@@ -190,6 +202,8 @@ function appearMiniSlideshow(type) {
         default:
             console.log("error");
     }
+    
+    //window.scrollTo(0, 1700);
 }
 
 /* ---------------------------- DISPLAY / READ / VIDEO ----------------------------------- */
@@ -232,16 +246,22 @@ function appearDisplay(type) {
             read_container.style.display = "none";
         }
     }
+    
+    //window.scrollTo(0, 1000);
 }
 
 function appearRead(type) {
     disappearTotalRead();
     document.getElementsByClassName(type)[0].style.display = "flex";
+    
+    //window.scrollTo(0, 1600);
 }
 
 function appearVideo(type) {
     disappearTotalVideo();
     document.getElementsByClassName(type)[0].style.display = "block";
+    
+    //window.scrollTo(0, 1500);
 }
 
 /* ----------------------------------- UNIVERSAL ----------------------------------------- */

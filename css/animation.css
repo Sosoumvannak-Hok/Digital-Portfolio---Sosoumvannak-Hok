@@ -66,13 +66,13 @@
 
 /* --------------------------------------- CARDS ----------------------------------------- */
 
-.card_hover:hover {
-    animation-name: card_hover;
+.card_hover_up {
+    animation-name: card_hover_up;
     animation-duration: 0.1s;
     animation-fill-mode: forwards;
 }
 
-@keyframes card_hover {
+@keyframes card_hover_up {
     0% {
         top: 0;
     }
@@ -80,6 +80,23 @@
     100% {
         box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
         top: -10px;
+    }
+}
+
+.card_hover_down {
+    animation-name: card_hover_down;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes card_hover_down {
+    0% {
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+        top: -10px;
+    }
+    
+    100% {
+        top: 0;
     }
 }
 
