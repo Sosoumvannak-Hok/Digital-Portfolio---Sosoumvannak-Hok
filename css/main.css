@@ -261,12 +261,23 @@ footer {
 }
 
 .title h1 {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 45px;
     position: relative;
-    top: -380px;
+    margin: auto;
+    padding: 35px;
+    top: -430px;
+    width: 500px;
+    opacity: .5;
 }
 
 .title .img {
     height: 800px;
+}
+
+.title_about .img {
+    background: linear-gradient(to top, #f9f9f9, transparent), url(../img/welcome_bg.jpg) no-repeat center;
 }
 
 .title_resume .img {
@@ -275,7 +286,6 @@ footer {
 
 .title_web_development .img {
     background: linear-gradient(to top, #f9f9f9, transparent), url(../img/web_development_bg.jpg) no-repeat center;
-    
 }
 
 .title_video_editing .img {
@@ -287,11 +297,11 @@ footer {
 }
 
 .title_media .img {
-    background: linear-gradient(to top, #f9f9f9, transparent), url(../img/web_development_bg.jpg) no-repeat center;
+    background: linear-gradient(to top, #f9f9f9, transparent), url(../img/contact_bg.jpg) no-repeat center;
 }
 
 .title_game .img {
-    background: linear-gradient(to top, #404040, transparent), linear-gradient(to bottom, #f9f9f9, transparent), url(../img/web_development_bg.jpg) no-repeat center;
+    background: linear-gradient(to top, #404040, transparent), linear-gradient(to bottom, #f9f9f9, transparent), url(../img/contact_bg.jpg) no-repeat center;
 }
 
 /* --------------------------------------- CARDS ----------------------------------------- */
@@ -542,7 +552,7 @@ footer {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    margin: 150px 0;
+    padding: 50px 0;
 }
 
 .aboutme_bio {
@@ -581,11 +591,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+    align-items: center;
+    align-content: flex-start;
     margin: auto;
     max-width: 1200px;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .media {
@@ -596,66 +606,50 @@ footer {
     padding: 15px 25px;
 }
 
-.media a {
-    
+.media_text {
+    font-size: 17px;
+    padding: 50px;
+    width: 1000px;
 }
 
-.media i {
-    margin: 0 10px 0 0;
+.media_google {
+    width: 890px;
 }
 
-.game_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-    margin: auto;
-    max-width: 1200px;
-    padding: 100px 0;
+.media_linkedin {
+    background-color: #3b5998;
 }
 
-.game {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.media_google p,
+.media_linkedin p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.media_google i,
+.media_linkedin i {
     font-size: 25px;
-    margin: 10px;
-    padding: 15px 25px;
+    padding: 0 10px;
 }
 
-.game img {
-    width: 35px;
-    height: 35px;
-    margin: 0 10px 0 0;
+.media_linkedin i {
+    color: #ffffff;
 }
-
-.game a {
-    color: #404040;
-}
-
 /* --------------------------------------- FOOTER ---------------------------------------- */
 
 .footer_flex {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: stretch;
     padding: 25px 50px;
 }
 
-.footer_flex div:first-child {
-    border-right: 1px solid #404040;
-    padding: 0 10px;
-    margin: 0 10px;
+.footer_flex span {
+    border: .5px solid #cccccc;
+    height: 100px;
 }
 
 .links {
@@ -682,4 +676,12 @@ footer {
 
 .links_portfolio li {
     font-size: 13px;
+}
+
+.contacts p {
+    padding: 5px 0;
+}
+
+.extra p {
+    padding: 5px 0;
 }
