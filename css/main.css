@@ -232,10 +232,10 @@ footer {
     color: #ffffff;
     cursor: pointer;
     font-size: 35px;
-    opacity: 0.5;
-    padding: 10px 15px;
+    opacity: 0.25;
+    padding: 470px 25px;
     position: absolute;
-    top: 40%;
+    top: 0;
 }
 
 .button_right {
@@ -244,7 +244,7 @@ footer {
 
 .button_left:hover, 
 .button_right:hover {
-   opacity: 0.75;
+   opacity: 0.5;
 }
 
 .bottom_fade img {
@@ -260,16 +260,33 @@ footer {
     text-align: center;
 }
 
-.title h1 {
+.title div {
     background-color: #000000;
-    color: #ffffff;
-    font-size: 45px;
     position: relative;
     margin: auto;
     padding: 35px;
     top: -430px;
     width: 500px;
-    opacity: .5;
+    opacity: 0.7;
+}
+
+.title_text {
+    position: relative;
+}
+
+.title_text h1 {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 45px;
+    opacity: 1;
+    padding: 10px;
+}
+
+.title_text p {
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 1;
+    padding: 10px;
 }
 
 .title .img {
@@ -462,6 +479,7 @@ footer {
 .mini_slide img {
     display: block;
     margin: auto;
+    width: 100%;
 }
 
 .mini_slide p {
@@ -505,6 +523,10 @@ footer {
     margin: 25px;
     padding: 35px;
     position: relative;
+}
+
+.video video {
+    width: 100%;
 }
 
 /* --------------------------------------- READ ------------------------------------------ */
@@ -595,7 +617,6 @@ footer {
     align-content: flex-start;
     margin: auto;
     max-width: 1200px;
-    padding: 50px 0;
 }
 
 .media {
@@ -617,7 +638,11 @@ footer {
 }
 
 .media_linkedin {
-    background-color: #3b5998;
+    background-color: #007bb5;
+}
+
+.media_linkedin:hover {
+    opacity: 0.7;
 }
 
 .media_google p,
@@ -635,6 +660,7 @@ footer {
 .media_linkedin i {
     color: #ffffff;
 }
+
 /* --------------------------------------- FOOTER ---------------------------------------- */
 
 .footer_flex {
@@ -647,41 +673,29 @@ footer {
     padding: 25px 50px;
 }
 
+.footer_flex div {
+    width: 40%;
+}
+
 .footer_flex span {
     border: .5px solid #cccccc;
     height: 100px;
 }
 
-.links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-}
-
-.links ul {
-    list-style: none;
-}
-
-.links ul li {
-    margin: 10px;
-}
-
-.links_portfolio li:first-child {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.links_portfolio li {
-    font-size: 13px;
-}
-
 .contacts p {
-    padding: 5px 0;
+    padding: 5px 10px;
+}
+
+.contacts i {
+    color: #3b5998;
+    font-size: 24px;
+}
+
+.contacts i:hover {
+    color: #003366;
 }
 
 .extra p {
-    padding: 5px 0;
+    
+    text-align: right;
 }

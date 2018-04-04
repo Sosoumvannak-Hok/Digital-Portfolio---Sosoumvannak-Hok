@@ -64,6 +64,26 @@
     }
 }
 
+/* --------------------------------------- TITLE ----------------------------------------- */
+
+.text_fadeup {
+    animation-name: text_fadeup;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text_fadeup {
+    0% {
+        opacity: 0;
+        top: -405px;
+    }
+    
+    100% {
+        opacity: 0.7;
+        top: -430px;
+    }
+}
+
 /* --------------------------------------- CARDS ----------------------------------------- */
 
 .card_hover_up {
