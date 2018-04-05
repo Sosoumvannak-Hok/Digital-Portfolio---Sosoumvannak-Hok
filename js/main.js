@@ -264,6 +264,45 @@ function appearVideo(type) {
     //window.scrollTo(0, 1500);
 }
 
+/* ------------------------------------- FORM -------------------------------------------- */
+
+function checkName(name) {
+    if (name.length == 0) {
+        console.log("Please enter your name.");
+    }
+}
+
+function checkEmail(email) {
+    if (!email.includes("@") || email.length == 0) {
+        console.log("Please enter a valid email address.");
+    } else {
+        console.log("Valid Email");
+    }
+}
+
+function checkMessage(message) {
+    console.log(message);
+}
+
+function submitForm() {
+    var myForm = document.getElementsByName("myForm")[0];
+    var inputName = document.getElementsByName("inputName")[0];
+    var inputEmail = document.getElementsByName("inputEmail")[0];
+    var inputMessage = document.getElementsByName("inputMessage")[0];
+    
+    var displayForm = "";
+    
+    if (inputName.value.length == 0 || inputEmail.value.length == 0 || inputMessage.value.length == 0) {
+        console.log('no');
+    } else {
+        displayForm += "<p>Name: " + inputName.value + "</p>";
+        displayForm += "<p>Email: " + inputEmail.value + "</p>";
+        displayForm += "<p>Your message to me: " + inputMessage.value + "</p>";
+    
+        document.getElementById("formInfo").innerHTML = displayForm;   
+    }
+}
+
 /* ----------------------------------- UNIVERSAL ----------------------------------------- */
 
 function resetIndex() {

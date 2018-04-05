@@ -74,16 +74,18 @@
             <div class="media media_linkedin">
                 <p><a href="https://www.linkedin.com/in/sosoumvannak-hok-74533714a/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
             </div>
-            <form action="">
+            <form name="myForm" action="">
+                <h1>Message me here if you want!</h1>
                 <p>Name:</p>
-                <input type="text">
+                <input name="inputName" type="text" required onblur="checkName(this.value);">
                 <p>Email:</p>
-                <input type="text">
+                <input name="inputEmail" type="text" required onblur="checkEmail(this.value);">
                 <p>Your message to me:</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="inputMessage" id="" cols="30" rows="10" required onblur="checkMessage(this.value);"></textarea>
                 <br>
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" onclick="submitForm();">
             </form>
+            <div id="formInfo"></div>
         </div>
     </main>
     <footer class="footer_flex">

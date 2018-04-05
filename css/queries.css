@@ -32,9 +32,14 @@
     .button_left,
     .button_right {
         padding: 400px 25px;
+        top: 0;
     }
     
     /* --------------------------------------- TITLE ----------------------------------------- */
+    
+    .title div {
+        width: 80%;
+    }
     
     .title .img {
         height: 750px;
@@ -104,10 +109,34 @@
         width: 250px;
     }
     
+    /* ------------------------------------- SLIDESHOW --------------------------------------- */
+    
+    .slide .img {
+        height: 880px;
+    }
+    
+    .button_left,
+    .button_right {
+        padding: 400px 25px;
+        top: 0;
+    }
+    
     /* --------------------------------------- TITLE ----------------------------------------- */
+    
+    .title div {
+        width: 80%;
+    }
     
     .title .img {
         height: 750px;
+    }
+    
+    .title_text h1 {
+        font-size: 30px;
+    }
+    
+    .title_text p {
+        font-size: 15px;
     }
     
     /* -------------------------------------- DISPLAY ---------------------------------------- */
