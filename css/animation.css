@@ -68,14 +68,14 @@
 
 .text_fadeup {
     animation-name: text_fadeup;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
 @keyframes text_fadeup {
     0% {
         opacity: 0;
-        top: -405px;
+        top: -380px;
     }
     
     100% {
