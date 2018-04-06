@@ -267,11 +267,12 @@ function appearVideo(type) {
 /* ------------------------------------- FORM -------------------------------------------- */
 
 function focusInput(input) {
-    input.style.backgroundColor = "Yellow";
+    input.style.backgroundColor = "#ffffff";
+    input.style.borderColor = "#ffffff";
 }
 
 function blurInput(input) {
-    input.style.backgroundColor = "White";
+    input.style.backgroundColor = "#ffffff";
 }
 
 function checkName(name) {
@@ -282,7 +283,7 @@ function checkName(name) {
         console.log("Please enter your name.");
         document.getElementsByName("inputName")[0].style.borderColor = "#ff0000";
     } else {
-        document.getElementsByName("inputName")[0].style.borderColor = "#000000";
+        document.getElementsByName("inputName")[0].style.borderColor = "#ffffff";
         document.getElementsByName("inputName")[0].style.backgroundColor = "#90EE90";
     }
 }
@@ -292,7 +293,7 @@ function checkEmail(email) {
         console.log("Please enter a valid email address.");
         document.getElementsByName("inputEmail")[0].style.borderColor = "#ff0000";
     } else {
-        document.getElementsByName("inputEmail")[0].style.borderColor = "#000000";
+        document.getElementsByName("inputEmail")[0].style.borderColor = "#ffffff";
         document.getElementsByName("inputEmail")[0].style.backgroundColor = "#90EE90";
     }
 }
@@ -303,9 +304,9 @@ function checkMessage(message) {
     
     if (message.length == 0) {
         console.log("Please enter a message.");
-        document.getElementsByName("inputMessage")[0].style.borderColor = "Red";
+        document.getElementsByName("inputMessage")[0].style.borderColor = "#ff0000";
     } else {
-        document.getElementsByName("inputMessage")[0].style.borderColor = "#000000";
+        document.getElementsByName("inputMessage")[0].style.borderColor = "#ffffff";
         document.getElementsByName("inputMessage")[0].style.backgroundColor = "#90EE90";
     }
 }
