@@ -51,7 +51,7 @@
         <div class="title title_media">
             <span class="img"></span>
             <div class="title_text text_fadeup">
-                <h1>My Contacts</h1>
+                <h1>Contact</h1>
                 <p>You may call me whenever possible. Scroll down to get in touch with me!</p>
             </div>
         </div>
@@ -76,12 +76,12 @@
             </div>
             <form name="myForm" action="">
                 <h1>Message me here if you want!</h1>
-                <p>Name:</p>
-                <input name="inputName" type="text" required onblur="checkName(this.value);">
-                <p>Email:</p>
-                <input name="inputEmail" type="text" required onblur="checkEmail(this.value);">
-                <p>Your message to me:</p>
-                <textarea name="inputMessage" id="" cols="30" rows="10" required onblur="checkMessage(this.value);"></textarea>
+                <p>Name: <span>*</span></p>
+                <input name="inputName" type="text" onfocus="focusInput(this);" onblur="blurInput(this); checkName(this.value);">
+                <p>Email: <span>*</span></p>
+                <input name="inputEmail" type="text" onfocus="focusInput(this);" onblur="blurInput(this); checkEmail(this.value);">
+                <p>Your message to me: <span>*</span></p>
+                <textarea name="inputMessage" id="" cols="30" rows="10" onfocus="focusInput(this);" onblur="blurInput(this); checkMessage(this.value);"></textarea>
                 <br>
                 <input type="button" value="Submit" onclick="submitForm();">
             </form>

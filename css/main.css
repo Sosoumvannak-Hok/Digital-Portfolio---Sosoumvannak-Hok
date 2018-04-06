@@ -441,6 +441,15 @@ footer {
     padding-bottom: 10px;
 }
 
+.display_buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
 .read_me {
     display: block;
     background-color: #404040;
@@ -693,6 +702,10 @@ form input:last-child {
 
 form textarea {
     width: 100%;
+}
+
+form span {
+    color: #ff0000;
 }
 
 #formInfo {

@@ -266,41 +266,85 @@ function appearVideo(type) {
 
 /* ------------------------------------- FORM -------------------------------------------- */
 
+function focusInput(input) {
+    input.style.backgroundColor = "Yellow";
+}
+
+function blurInput(input) {
+    input.style.backgroundColor = "White";
+}
+
 function checkName(name) {
+    
+    name = name.trim();
+    
     if (name.length == 0) {
         console.log("Please enter your name.");
+        document.getElementsByName("inputName")[0].style.borderColor = "#ff0000";
+    } else {
+        document.getElementsByName("inputName")[0].style.borderColor = "#000000";
+        document.getElementsByName("inputName")[0].style.backgroundColor = "#90EE90";
     }
 }
 
 function checkEmail(email) {
-    if (!email.includes("@") || email.length == 0) {
+    if (!email.includes("@") || !email.includes(".") || email.length == 0) {
         console.log("Please enter a valid email address.");
+        document.getElementsByName("inputEmail")[0].style.borderColor = "#ff0000";
     } else {
-        console.log("Valid Email");
+        document.getElementsByName("inputEmail")[0].style.borderColor = "#000000";
+        document.getElementsByName("inputEmail")[0].style.backgroundColor = "#90EE90";
     }
 }
 
 function checkMessage(message) {
-    console.log(message);
+    
+    message = message.trim();
+    
+    if (message.length == 0) {
+        console.log("Please enter a message.");
+        document.getElementsByName("inputMessage")[0].style.borderColor = "Red";
+    } else {
+        document.getElementsByName("inputMessage")[0].style.borderColor = "#000000";
+        document.getElementsByName("inputMessage")[0].style.backgroundColor = "#90EE90";
+    }
 }
 
 function submitForm() {
-    var myForm = document.getElementsByName("myForm")[0];
-    var inputName = document.getElementsByName("inputName")[0];
-    var inputEmail = document.getElementsByName("inputEmail")[0];
-    var inputMessage = document.getElementsByName("inputMessage")[0];
+    myForm = document.getElementsByName("myForm")[0];
+    inputName = document.getElementsByName("inputName")[0];
+    inputEmail = document.getElementsByName("inputEmail")[0];
+    inputMessage = document.getElementsByName("inputMessage")[0];
     
     var displayForm = "";
     
     if (inputName.value.length == 0 || inputEmail.value.length == 0 || inputMessage.value.length == 0) {
-        console.log('no');
+        displayForm += "<p style=\"text-align: center;\">Uh ho. It seems like you're missing something.</p>";
+        
+        if (inputName.value.trim().length == 0) {
+            document.getElementsByName("inputName")[0].style.borderColor = "Red";
+        }
+        
+        if (inputEmail.value.length == 0) {
+            document.getElementsByName("inputEmail")[0].style.borderColor = "Red";
+        }
+        
+        if (inputEmail.value.trim().length == 0) {
+            document.getElementsByName("inputMessage")[0].style.borderColor = "Red";
+        }
     } else {
         displayForm += "<p>Name: " + inputName.value + "</p>";
+        displayForm += "<br>";
         displayForm += "<p>Email: " + inputEmail.value + "</p>";
-        displayForm += "<p>Your message to me: " + inputMessage.value + "</p>";
-    
-        document.getElementById("formInfo").innerHTML = displayForm;   
+        displayForm += "<br>";
+        displayForm += "<p>Your message to me:</p>";
+        displayForm += "<p style=\"padding: 10px\">" + inputMessage.value + "</p>";
+        displayForm += "<br>";
+        displayForm += "<br>";
+        displayForm += "<p style=\"text-align: center;\">Thanks for the message! I'll be in touch whenever I can.</p>"; 
     }
+    
+    document.getElementById("formInfo").innerHTML = displayForm;
 }
 
 /* ----------------------------------- UNIVERSAL ----------------------------------------- */
